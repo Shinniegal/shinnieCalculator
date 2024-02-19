@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShinnieCalculator</title>
+    <link rel="stylesheet" href="shinnieCalculator.css">
+    <link rel="icon" type="image/x/icon" href="image/shinnieCalculator.jpg">
+    <script src="https://kit.fontawesome.com/8e92d86bfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="calcBody">
+        <!-- calculator top -->
+        <div class="calcTop">
+            <div class="calcDesc">
+                <p class="calcDesc">S.C<span class="calcDesc">ma042002</span></p>
+                <input class="calcDesc" type="text" disabled>
+            </div>
+            <input id="calcTypein" class="calcTypein" type="text" readonly>
+        </div>
+        <!-- calculator body -->
+        <div class="calcButton">
+            <div class="fst">
+                <button class="fst" onclick="clearHistory()">AC/ON</button>
+                <button class="fst"><i class="fa-solid fa-caret-right"></i></button>
+                <button class="fst"><i class="fa-solid fa-square-root-variable"></i></button>
+                <button class="fst" onclick="valuesToDisplay('%')">%</button>
+            </div>
+            <div class="snd">
+                <button class="snd" onclick="valuesToDisplay('7')">7</button>
+                <button class="snd" onclick="valuesToDisplay('8')">8</i></button>
+                <button class="snd" onclick="valuesToDisplay('9')">9</i></button>
+                <button class="snd" onclick="valuesToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+            </div>
+            <div class="snd">
+                <button class="snd" onclick="valuesToDisplay('4')">4</button>
+                <button class="snd" onclick="valuesToDisplay('5')">5</i></button>
+                <button class="snd" onclick="valuesToDisplay('6')">6</i></button>
+                <button class="snd" onclick="valuesToDisplay('*')">X</button>
+            </div>
+            <div class="snd">
+                <button class="snd" onclick="valuesToDisplay('1')">1</button>
+                <button class="snd" onclick="valuesToDisplay('2')">2</i></button>
+                <button class="snd" onclick="valuesToDisplay('3')">3</i></button>
+                <button class="snd" onclick="valuesToDisplay('-')">-</button>
+            </div>
+            <div class="snd">
+                <button class="snd" onclick="valuesToDisplay('0')">0</button>
+                <button class="snd" onclick="valuesToDisplay('.')">.</i></button>
+                <button class="snd" onclick="resultToDisplay()">=</i></button>
+                <button class="snd" onclick="valuesToDisplay('+')">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="shinnieCalculator.js"></script>
+</body>
+</html>
